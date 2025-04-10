@@ -1,0 +1,13 @@
+.BodyBackground {
+    position: fixed;        /* делает хедер "прилипшим" к верху */
+    bottom: 5vh;                 /* прижимает к самому низу */
+    top: 10vh;
+    left: 0;                /* растягиваем от левого края */
+    width: 100vw;           /* во всю ширину экрана */
+    height: 100%;           /* 10% от высоты экрана */
+    background-color: #575555; /* светлый фон — не черный */
+    color: rgb(150, 150, 150);
+    display: flex;          /* чтобы удобно размещать текст */
+    align-items: center;
+    padding-left: 20px;
+}

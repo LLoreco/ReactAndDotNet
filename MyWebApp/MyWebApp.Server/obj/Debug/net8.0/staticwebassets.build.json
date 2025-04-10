@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "f/EPd1YnlNApqtsuqEERyNefb2eavkyfAOW4kmwozZM=",
+  "Source": "MyWebApp.Server",
+  "BasePath": "_content/MyWebApp.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\mywebapp.client\\mywebapp.client.esproj",
+      "Version": 2,
+      "Source": "mywebapp.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

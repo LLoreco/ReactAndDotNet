@@ -1,0 +1,13 @@
+.HeaderBackground {
+    position: fixed;        /* делает хедер "прилипшим" к верху */
+    top: 0;                 /* прижимает к самому верху */
+    right: 0;                /* растягиваем от левого края */
+    width: 100vw;           /* во всю ширину экрана */
+    height: 10vh;           /* 10% от высоты экрана */
+    background-color: #444242; /* светлый фон — не черный */
+    color: brown;
+    display: flex;          /* чтобы удобно размещать текст */
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* лёгкая тень снизу */
+}

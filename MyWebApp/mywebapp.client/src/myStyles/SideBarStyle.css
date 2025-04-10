@@ -1,0 +1,11 @@
+.SideBarBackground {
+    position: fixed;
+    left: 0;               
+    width: 50px;           
+    height: 100%; /* высота, учитывая Header и Footer */
+    background-color: #ebebeb; 
+    color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}

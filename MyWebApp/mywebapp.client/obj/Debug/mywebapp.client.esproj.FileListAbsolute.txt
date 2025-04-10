@@ -1,0 +1,1 @@
+D:\MyProjectOnReactAndDonNet\ReactAndDotNet\MyWebApp\mywebapp.client\obj\Debug\mywebapp.client.esproj.CoreCompileInputs.cache
