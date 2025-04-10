@@ -5,8 +5,7 @@
     left: 0;                /* растягиваем от левого края */
     width: 100vw;           /* во всю ширину экрана */
     height: 100%;           /* 10% от высоты экрана */
-    background-color: #575555; /* светлый фон — не черный */
-    color: rgb(150, 150, 150);
+    background-color: var(--body-color); /* светлый фон — не черный */
     display: flex;          /* чтобы удобно размещать текст */
     align-items: center;
     padding-left: 20px;

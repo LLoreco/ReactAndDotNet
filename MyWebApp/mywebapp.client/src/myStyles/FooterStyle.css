@@ -1,12 +1,10 @@
 .FooterBackground {
     position: fixed;        /* делает хедер "прилипшим" к верху */
     bottom: 0;                 /* прижимает к самому низу */
-    left: 0;                /* растягиваем от левого края */
-    width: 100vw;           /* во всю ширину экрана */
+    right: 0;                /* растягиваем от левого края */
+    width: calc(100vw - var(--sidebar-width));           /* во всю ширину экрана */
     height: 5vh;           /* 10% от высоты экрана */
-    background-color: #444242; /* светлый фон — не черный */
-    color: rgb(150, 150, 150);
+    background-color: var(--footer-color); /* светлый фон — не черный */
     display: flex;          /* чтобы удобно размещать текст */
     align-items: center;
-    padding-left: 20px;
 }
