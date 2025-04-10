@@ -2,11 +2,10 @@
     position: fixed;        /* делает хедер "прилипшим" к верху */
     bottom: 5vh;                 /* прижимает к самому низу */
     top: 10vh;
-    left: 0;                /* растягиваем от левого края */
-    width: 100vw;           /* во всю ширину экрана */
+    right: 0;                /* растягиваем от левого края */
+    width: calc(100vw - var(--sidebar-width) - var(--sidebar-margin));           /* во всю ширину экрана */
     height: 100%;           /* 10% от высоты экрана */
     background-color: var(--body-color); /* светлый фон — не черный */
     display: flex;          /* чтобы удобно размещать текст */
     align-items: center;
-    padding-left: 20px;
 }

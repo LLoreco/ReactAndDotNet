@@ -5,10 +5,13 @@ const theme = {
         }
     },
     background:{
-        sidebarColor:'#ebebeb',
-        headerColor:'#444242',
-        footeColor:'#444242',
-        bodyColor:'#575555'
+        sidebarColor:'#024C4C',
+        headerColor:'#132E2E',
+        footeColor:'#132E2E',
+        bodyColor:'#002222'
+    },
+    margins:{
+        sidebarMargin:'20px',
     }
 }
 

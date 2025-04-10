@@ -12,10 +12,13 @@ function App() {
         const root = document.documentElement;
 
         root.style.setProperty('--sidebar-width', theme.sizes.width.sidebar)
+
         root.style.setProperty('--sidebar-color',theme.background.sidebarColor)
         root.style.setProperty('--header-color',theme.background.headerColor)
         root.style.setProperty('--footer-color',theme.background.footeColor)
         root.style.setProperty('--body-color',theme.background.bodyColor)
+
+        root.style.setProperty('--sidebar-margin',theme.margins.sidebarMargin)
     }
 
     setThemeVariables();
@@ -24,7 +27,7 @@ function App() {
         <div>
             <SideBar/>
             <Header />
-            {/* <Body /> */}
+            <Body />
             <Footer />
         </div>
     );
