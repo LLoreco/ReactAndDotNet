@@ -1,12 +1,15 @@
 import '../myStyles/HeaderStyle.css'
 
-function Header(){
+function Header({activeTask, nextTask, timer}){
     return(
         <div className="HeaderBackground">
-            Активная задача
-            <div>Тут пропуск</div>
-            <div>Ближайшая задача + таймер через сколько</div>
-            <div>Добавить задачу МАРКДАУН</div>
+            {activeTask && (
+                <div className='HeaderActiveTask'>
+                    {activeTask}
+                </div>
+            )}
+            <div className='NextTask'>{nextTask} {timer}</div>
+            <div className='CreateTaskButton'>Добавить задачу МАРКДАУН</div>
         </div>
     );
 }

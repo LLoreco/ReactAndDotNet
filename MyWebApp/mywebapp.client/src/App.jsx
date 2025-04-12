@@ -8,6 +8,10 @@ import theme from './theme/mainTheme';
 
 function App() {
 
+    //Для дэбага
+    const task = {activeTask: 'аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа таск', nextTask: 'Следующая задача', timer:'1:32'}
+
+
     const setThemeVariables = () => {
         const root = document.documentElement;
 
@@ -26,7 +30,7 @@ function App() {
     return (
         <div>
             <SideBar/>
-            <Header />
+            <Header activeTask={task.activeTask} nextTask={task.nextTask} timer={task.timer}/>
             <Body />
             <Footer />
         </div>
