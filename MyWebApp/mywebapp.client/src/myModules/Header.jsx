@@ -1,4 +1,6 @@
 import '../myStyles/HeaderStyle.css'
+import NextTask from './HeaderComponents/NextTask';
+import CreateTaskButton from './HeaderComponents/CreateTaskButton';
 
 function Header({activeTask, nextTask, timer}){
     return(
@@ -8,8 +10,8 @@ function Header({activeTask, nextTask, timer}){
                     {activeTask}
                 </div>
             )}
-            <div className='NextTask'>{nextTask} {timer}</div>
-            <div className='CreateTaskButton'>Добавить задачу МАРКДАУН</div>
+            <NextTask nextTask={nextTask} timer={timer}/>
+            <CreateTaskButton />
         </div>
     );
 }

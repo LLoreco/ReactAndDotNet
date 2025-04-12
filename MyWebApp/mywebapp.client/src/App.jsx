@@ -9,7 +9,7 @@ import theme from './theme/mainTheme';
 function App() {
 
     //Для дэбага
-    const task = {activeTask: 'аааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа таск', nextTask: 'Следующая задача', timer:'1:32'}
+    const task = {activeTask: 'ОЧЕНЬ ДЛИННЫЙ ТАСК', nextTask: 'Следующая задача', timer:'1:32'}
 
 
     const setThemeVariables = () => {
