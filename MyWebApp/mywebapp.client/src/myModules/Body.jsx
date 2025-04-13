@@ -1,9 +1,9 @@
 import '../myStyles/BodyStyle.css'
+import BodyTable from './BodyComponents/BodyTable';
 function Body(){
     return(
         <div className="BodyBackground">
-            <div>задача</div>
-            <div>Открыть задачу МАРКДАУН</div>
+            <BodyTable />
         </div>
     );
 }

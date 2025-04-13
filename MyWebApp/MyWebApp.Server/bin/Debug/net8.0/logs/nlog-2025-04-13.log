@@ -1,0 +1,7 @@
+2025-04-13 12:11:25.4837 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:13:30.3614 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:13:32.6326 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:13:48.1539 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:16:04.8774 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:17:54.1532 MyWebApp.Server.Service.TasksServices Не удалось получить данные из таблицы Tasks в TasksServices
+2025-04-13 12:18:29.8054 MyWebApp.Server.Controllers.TasksController Получил вcе задачи через GET запрос

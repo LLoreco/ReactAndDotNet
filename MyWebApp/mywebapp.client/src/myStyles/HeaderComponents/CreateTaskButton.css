@@ -1,7 +1,7 @@
 .CreateTaskButton{
-    background-color: aquamarine;
+    background-color: var(--create-task-button-color);
 }
 .CustomButton{
     right: 30%;
-    padding: 0px 30px;
+    padding: var(--create-task-button-padding);
 }

@@ -1,11 +1,11 @@
 .BodyBackground {
-    position: fixed;        /* делает хедер "прилипшим" к верху */
-    bottom: 5vh;                 /* прижимает к самому низу */
+    position: fixed;        
+    bottom: 5vh;                
     top: 10vh;
-    right: 0;                /* растягиваем от левого края */
-    width: calc(100vw - var(--sidebar-width) - var(--sidebar-margin));           /* во всю ширину экрана */
-    height: 100%;           /* 10% от высоты экрана */
-    background-color: var(--body-color); /* светлый фон — не черный */
-    display: flex;          /* чтобы удобно размещать текст */
-    align-items: center;
+    right: 0;                
+    width: calc(100vw - var(--sidebar-width) - var(--sidebar-margin));           
+    height: calc(var(--body-height) - var(--footer-height) - var(--header-height));           
+    background-color: var(--body-color); 
+    display: flex;          
+    align-items:start;
 }

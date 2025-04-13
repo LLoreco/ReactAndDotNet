@@ -1,0 +1,39 @@
+.TableWrapper {
+    flex: 1;
+    height: 100%;             
+    overflow-y: auto; 
+    border: 2px solid var(--task-table-border-color);
+    width: 100%;
+}
+
+/* Таблица */
+.TaskTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.TaskTable th, .TaskTable td {
+    border: 5px solid var(--task-table-border-color);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.TaskTable th:nth-child(1),
+.TaskTable td:nth-child(1) {
+    width: 5%;
+}
+
+.TaskTable th:nth-child(2),
+.TaskTable td:nth-child(2) {
+    width: 60%;
+}
+
+.TaskTable th:nth-child(3),
+.TaskTable td:nth-child(3) {
+    width: 15%;
+}
+
+.TaskTable th:nth-child(4),
+.TaskTable td:nth-child(4) {
+    width: 10%;
+}

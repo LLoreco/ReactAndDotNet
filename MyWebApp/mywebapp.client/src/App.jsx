@@ -14,15 +14,41 @@ function App() {
 
     const setThemeVariables = () => {
         const root = document.documentElement;
-
+        //width
         root.style.setProperty('--sidebar-width', theme.sizes.width.sidebar)
 
+        //height
+        root.style.setProperty('--sidebar-height',theme.sizes.height.sidebar)
+        root.style.setProperty('--sidebar-logo-height',theme.sizes.height.sidebarLogo)
+        root.style.setProperty('--header-height',theme.sizes.height.header)
+        root.style.setProperty('--footer-height',theme.sizes.height.footer)
+        root.style.setProperty('--body-height',theme.sizes.height.body)
+
+        //color
         root.style.setProperty('--sidebar-color',theme.background.sidebarColor)
         root.style.setProperty('--header-color',theme.background.headerColor)
         root.style.setProperty('--footer-color',theme.background.footeColor)
         root.style.setProperty('--body-color',theme.background.bodyColor)
+        root.style.setProperty('--active-task-color',theme.background.activeTask)
+        root.style.setProperty('--next-task-color',theme.background.nextTask)
+        root.style.setProperty('--create-task-button-color',theme.background.createTaskButton)
 
+
+        //margins
         root.style.setProperty('--sidebar-margin',theme.margins.sidebarMargin)
+        root.style.setProperty('--sidebar-content-margin',theme.margins.sidebarContenMargin)
+
+        //paddings
+        root.style.setProperty('--sidebar-padding',theme.paddings.sidebar)
+        root.style.setProperty('--header-active-task-padding',theme.paddings.headerActiveTask)
+        root.style.setProperty('--header-next-task-padding',theme.paddings.nextTask)
+        root.style.setProperty('--create-task-button-padding',theme.paddings.createTaskButton)
+
+        //text
+        root.style.setProperty('--next-task-timer-color',theme.text.color.nextTaskTimer)
+
+        //table
+        root.style.setProperty('--task-table-border-color', theme.table.color.border)
     }
 
     setThemeVariables();
