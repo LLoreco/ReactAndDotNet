@@ -14,16 +14,25 @@ namespace MyWebApp.Server.Service
             _dbContext = context;
         }
 
-        public async Task<List<Tasks>> GetAllTasks()
+        public async Task<List<TaskDto>> GetAllTasks()
         {
             try
             {
-                return await _dbContext.tasks.ToListAsync();
+                var entities = await _dbContext.tasks.ToListAsync();
+                var result = entities.Select(t => new TaskDto
+                {
+                    Id = t.id,
+                    TaskName = t.TaskName,
+                    TaskTime = t.TaskTime.ToString("dd.MM.yyyy HH:mm"),
+                    IsCompleted = t.IsCompleted
+                }).ToList();
+
+                return result;
             }
             catch (Exception ex)
             {
                 _logger.Error(ex, "Не удалось получить данные из таблицы Tasks в TasksServices");
-                return new List<Tasks>();
+                return new List<TaskDto>();
             }
         }
         public async Task<TaskResult<Tasks>> GetTask(int id)
