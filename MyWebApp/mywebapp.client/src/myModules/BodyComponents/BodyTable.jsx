@@ -1,8 +1,9 @@
 import '../../myStyles/BodyComponents/BodyTable.css';
+import ActionButtons from './ActionButtons';
 
 function BodyTable() {
     return (
-        <div className="TableWrapper"> {/* <-- контейнер для скролла */}
+        <div className="TableWrapper">
             <table className="TaskTable">
                 <thead className="TaskTableThead">
                     <tr>
@@ -17,145 +18,25 @@ function BodyTable() {
                         <td>1</td>
                         <td>Открыть задачу МАРКДАУН</td>
                         <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
+                        <td><ActionButtons /></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Пример задачи</td>
                         <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
+                        <td><ActionButtons /></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Открыть задачу МАРКДАУН</td>
                         <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
+                        <td><ActionButtons /></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Пример задачи</td>
                         <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Пример задачи</td>
-                        <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Пример задачи</td>
-                        <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Пример задачи</td>
-                        <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Пример задачи</td>
-                        <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Пример задачи</td>
-                        <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Пример задачи</td>
-                        <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Пример задачи</td>
-                        <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Пример задачи</td>
-                        <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>24.12.2025 13:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Пример задачи</td>
-                        <td>25.12.2025 16:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Открыть задачу МАРКДАУН</td>
-                        <td>25.12.2025 17:00</td>
-                        <td>КНОПКИ</td>
-                    </tr>
-                    <tr>
-                        <td>49876</td>
-                        <td>Пример задачи</td>
-                        <td>30.12.2025 9:00</td>
-                        <td>КНОПКИ</td>
+                        <td><ActionButtons /></td>
                     </tr>
                 </tbody>
             </table>

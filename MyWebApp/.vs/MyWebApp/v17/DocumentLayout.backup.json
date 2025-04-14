@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\service\\tasksservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\service\\tasksservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\data\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\data\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\service\\tasksservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|solutionrelative:mywebapp.server\\service\\tasksservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73923421-22C8-4A34-9636-4C80C05D325E}|MyWebApp.Server\\MyWebApp.Server.csproj|d:\\myprojectonreactanddonnet\\reactanddotnet\\mywebapp\\mywebapp.server\\mywebapp.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -46,12 +46,11 @@
               "RelativeToolTip": "MyWebApp.Server\\MyWebApp.Server.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-13T07:09:35.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:35.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Program.cs",
               "RelativeDocumentMoniker": "MyWebApp.Server\\Program.cs",
@@ -59,12 +58,11 @@
               "RelativeToolTip": "MyWebApp.Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T07:09:31.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:31.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\appsettings.json",
               "RelativeDocumentMoniker": "MyWebApp.Server\\appsettings.json",
@@ -72,12 +70,11 @@
               "RelativeToolTip": "MyWebApp.Server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-13T07:09:24.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:24.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "TasksServices.cs",
               "DocumentMoniker": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Service\\TasksServices.cs",
               "RelativeDocumentMoniker": "MyWebApp.Server\\Service\\TasksServices.cs",
@@ -85,34 +82,32 @@
               "RelativeToolTip": "MyWebApp.Server\\Service\\TasksServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T06:54:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T06:54:52.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TasksController.cs",
               "DocumentMoniker": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "MyWebApp.Server\\Controllers\\TasksController.cs",
               "ToolTip": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Controllers\\TasksController.cs",
               "RelativeToolTip": "MyWebApp.Server\\Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T06:53:43.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Tasks.cs",
               "DocumentMoniker": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Data\\Tasks.cs",
               "RelativeDocumentMoniker": "MyWebApp.Server\\Data\\Tasks.cs",
               "ToolTip": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Data\\Tasks.cs",
               "RelativeToolTip": "MyWebApp.Server\\Data\\Tasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T16:32:39.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T16:32:39.852Z"
             }
           ]
         }

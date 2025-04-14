@@ -46,8 +46,7 @@
               "RelativeToolTip": "MyWebApp.Server\\MyWebApp.Server.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-13T07:09:35.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:35.73Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "MyWebApp.Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T07:09:31.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:31.781Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "MyWebApp.Server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-13T07:09:24.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T07:09:24.013Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "MyWebApp.Server\\Service\\TasksServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T06:54:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-13T06:54:52.121Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "MyWebApp.Server\\Controllers\\TasksController.cs",
               "ToolTip": "D:\\MyProjectOnReactAndDonNet\\ReactAndDotNet\\MyWebApp\\MyWebApp.Server\\Controllers\\TasksController.cs",
               "RelativeToolTip": "MyWebApp.Server\\Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T06:53:43.081Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "MyWebApp.Server\\Data\\Tasks.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T16:32:39.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T16:32:39.852Z"
             }
           ]
         }

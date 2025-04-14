@@ -18,7 +18,8 @@ const theme = {
         bodyColor:'#002222',
         activeTask: '#024C4C',
         nextTask: '#024C4C',
-        createTaskButton: 'aquamarine'
+        createTaskButton: 'aquamarine',
+        actionButton: '#024C4C'
     },
     margins:{
         sidebarMargin:'20px',

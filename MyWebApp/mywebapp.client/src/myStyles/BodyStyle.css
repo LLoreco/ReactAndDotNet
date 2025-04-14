@@ -4,7 +4,7 @@
     top: 10vh;
     right: 0;                
     width: calc(100vw - var(--sidebar-width) - var(--sidebar-margin));           
-    height: calc(var(--body-height) - var(--footer-height) - var(--header-height));           
+    height: calc(var(--body-height) - var(--header-height));           
     background-color: var(--body-color); 
     display: flex;          
     align-items:start;

@@ -21,18 +21,16 @@ function App() {
         root.style.setProperty('--sidebar-height',theme.sizes.height.sidebar)
         root.style.setProperty('--sidebar-logo-height',theme.sizes.height.sidebarLogo)
         root.style.setProperty('--header-height',theme.sizes.height.header)
-        root.style.setProperty('--footer-height',theme.sizes.height.footer)
         root.style.setProperty('--body-height',theme.sizes.height.body)
 
         //color
         root.style.setProperty('--sidebar-color',theme.background.sidebarColor)
         root.style.setProperty('--header-color',theme.background.headerColor)
-        root.style.setProperty('--footer-color',theme.background.footeColor)
         root.style.setProperty('--body-color',theme.background.bodyColor)
         root.style.setProperty('--active-task-color',theme.background.activeTask)
         root.style.setProperty('--next-task-color',theme.background.nextTask)
         root.style.setProperty('--create-task-button-color',theme.background.createTaskButton)
-
+        root.style.setProperty('--action-button-color', theme.background.actionButton)
 
         //margins
         root.style.setProperty('--sidebar-margin',theme.margins.sidebarMargin)
@@ -58,7 +56,7 @@ function App() {
             <SideBar/>
             <Header activeTask={task.activeTask} nextTask={task.nextTask} timer={task.timer}/>
             <Body />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

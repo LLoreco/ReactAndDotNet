@@ -6,7 +6,6 @@
     width: 100%;
 }
 
-/* Таблица */
 .TaskTable {
     width: 100%;
     border-collapse: collapse;
@@ -36,4 +35,15 @@
 .TaskTable th:nth-child(4),
 .TaskTable td:nth-child(4) {
     width: 10%;
+}
+.ActionButtonsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.ActionButton{
+    background-color: var(--action-button-color);
+    max-width: 30px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
 }
