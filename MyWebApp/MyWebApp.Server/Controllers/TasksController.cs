@@ -44,5 +44,112 @@ namespace MyWebApp.Server.Controllers
                 return StatusCode(500, "Произошла ошибка при получении всех задач. Попробуйте позже.");
             }
         }
+
+        //GET: api/Tasks/GetTask/id
+        [HttpGet("GetTask/{id}")]
+        public async Task<ActionResult<IEnumerable<Tasks>>> GetTask(int id)
+        {
+            try
+            {
+                var tasks = await _tasksService.GetTask(id);
+                if (tasks.IsSuccess)
+                {
+                    _logger.Info($"Получил задачу {id} через GET запрос");
+                    return Ok(JsonSerializer.Serialize(tasks));
+                }
+                else
+                {
+                    return StatusCode(404, $"Задача {id} не найдена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при получении задачи {id}.");
+                return StatusCode(500, "Произошла ошибка при получении получении задачи {id}. Попробуйте позже.");
+            }
+        }
+
+        //POST: api/Tasks/AddTask
+        [HttpPost("AddTask")]
+        public async Task<ActionResult<Tasks>> AddTask(Tasks item)
+        {
+            try
+            {
+                var result = await _tasksService.InsertRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Добавил задачу {item.id} через POST запрос");
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Задача не добавлена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при добавлении задачи {item.id}.");
+                return StatusCode(500, $"Произошла ошибка при добавлении задачи {item.id}. Попробуйте позже.");
+            }
+        }
+
+        //PUT: api/Tasks/UpdateTask/id
+        [HttpPut("UpdateTask/{id}")]
+        public async Task<IActionResult> UpdateTask(int id, Tasks item)
+        {
+            try
+            {
+                var result = await _tasksService.UpdateRecord(item);
+                if (result.IsSuccess)
+                {
+                    _logger.Info($"Обновил задачу {item.id} через PUT запрос");
+                    await _context.SaveChangesAsync();
+                    return Ok(JsonSerializer.Serialize(item));
+                }
+                else
+                {
+                    return StatusCode(404, "Задача не обновлена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при обновлении задачи {item.id}.");
+                return StatusCode(500, $"Произошла ошибка при обновлении задачи {item.id}. Попробуйте позже.");
+            }
+        }
+
+        //DELETE: api/Tasks/DeleteTask/id
+        [HttpDelete("DeleteTask/{id}")]
+        public async Task<IActionResult> DeleteTask(int id)
+        {
+            try
+            {
+                var taskResult = await _tasksService.GetTask(id);
+                if (taskResult.IsSuccess)
+                {
+                    var task = taskResult.Result;
+                    var deleteTask = await _tasksService.DeleteRecord(task);
+                    if (deleteTask.IsSuccess)
+                    {
+                        _logger.Info($"Удалил Задачу {id} через DELETE запрос");
+                        await _context.SaveChangesAsync();
+                        return Ok(JsonSerializer.Serialize(deleteTask));
+                    }
+                    else
+                    {
+                        return StatusCode(500, "Задача не удалена.");
+                    }
+                }
+                else
+                {
+                    return StatusCode(404, "Задача не удалена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при удалении задачи {id}.");
+                return StatusCode(500, $"Произошла ошибка при удалении задачи {id}. Попробуйте позже.");
+            }
+        }
     }
 }

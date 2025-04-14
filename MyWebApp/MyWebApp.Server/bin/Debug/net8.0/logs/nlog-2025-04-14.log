@@ -1,0 +1,6 @@
+2025-04-14 18:46:43.8450 MyWebApp.Server.Controllers.TasksController Получил задачу 1 через GET запрос
+2025-04-14 18:56:09.0510 MyWebApp.Server.Service.TasksServices Создана новая запись и сохранена в таблицу Tasks
+2025-04-14 18:56:09.0665 MyWebApp.Server.Controllers.TasksController Добавил задачу 2 через POST запрос
+2025-04-14 19:11:24.7348 MyWebApp.Server.Service.TasksServices Запись обновлена
+2025-04-14 19:11:24.9494 MyWebApp.Server.Controllers.TasksController Обновил задачу 2 через PUT запрос
+2025-04-14 19:25:36.3389 MyWebApp.Server.Controllers.TasksController Удалил Задачу 2 через DELETE запрос
