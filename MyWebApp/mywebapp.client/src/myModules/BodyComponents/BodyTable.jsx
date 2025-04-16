@@ -10,7 +10,7 @@ function BodyTable() {
       };
       useEffect(() => {
         fetch("http://localhost:5016/api/Tasks/GetAllTasks", requestOptions)
-            .then((response) => response.json())  // <-- вот тут важно
+            .then((response) => response.json())
             .then((result) => {
                 console.log(result);
                 setTasks(result);

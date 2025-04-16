@@ -6,5 +6,6 @@
         public string TaskName { get; set; }
         public string TaskTime { get; set; }
         public bool IsCompleted { get; set; }
+        public bool IsActive { get; set; }
     }
 }

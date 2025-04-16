@@ -12,6 +12,7 @@ namespace MyWebApp.Server.Data
         public DateTimeOffset TaskCreated { get; set; }
         public DateTimeOffset TaskTime { get; set; }
         public bool IsCompleted { get; set; }
+        public bool IsActive { get; set; }
 
     }
 }

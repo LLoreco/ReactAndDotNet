@@ -65,10 +65,33 @@ namespace MyWebApp.Server.Controllers
             catch (Exception ex)
             {
                 _logger.Error(ex, $"Произошла ошибка при получении задачи {id}.");
-                return StatusCode(500, "Произошла ошибка при получении получении задачи {id}. Попробуйте позже.");
+                return StatusCode(500, "Произошла ошибка при получении задачи {id}. Попробуйте позже.");
             }
         }
 
+        //GET: api/Tsks/GetActiveTask
+        [HttpGet("GetActiveTask")]
+        public async Task<ActionResult<IEnumerable<Tasks>>> GetActiveTask()
+        {
+            try
+            {
+                var activeTask = await _tasksService.GetActiveTasks();
+                if (activeTask.IsSuccess)
+                {
+                    _logger.Info($"Получил активную задачу");
+                    return Ok(JsonSerializer.Serialize(activeTask));
+                }
+                else
+                {
+                    return StatusCode(404, $"Активная задача не найдена.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, $"Произошла ошибка при получении активной задачи");
+                return StatusCode(500, "Произошла ошибка при получении активной задачи. Попробуйте позже.");
+            }
+        }
         //POST: api/Tasks/AddTask
         [HttpPost("AddTask")]
         public async Task<ActionResult<Tasks>> AddTask(Tasks item)

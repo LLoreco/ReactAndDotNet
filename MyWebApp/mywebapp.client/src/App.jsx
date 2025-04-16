@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './myModules/Header';
-import Footer from './myModules/Footer';
 import Body from './myModules/Body';
 import SideBar from './myModules/SideBar';
 import theme from './theme/mainTheme';
@@ -10,8 +9,6 @@ function App() {
 
     //Для дэбага
     const task = {activeTask: 'ОЧЕНЬ ДЛИННЫЙ ТАСК', nextTask: 'Следующая задача', timer:'1:32'}
-
-
     const setThemeVariables = () => {
         const root = document.documentElement;
         //width
@@ -54,7 +51,9 @@ function App() {
     return (
         <div>
             <SideBar/>
-            <Header activeTask={task.activeTask} nextTask={task.nextTask} timer={task.timer}/>
+            {/* <Header activeTask={task.activeTask} nextTask={task.nextTask} timer={task.timer}/> */}
+            {/* <Header activeTask={activeTask} nextTask={task.nextTask} timer={timer}/> */
+            <Header />}
             <Body />
             {/* <Footer /> */}
         </div>

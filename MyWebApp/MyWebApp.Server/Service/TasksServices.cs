@@ -24,7 +24,8 @@ namespace MyWebApp.Server.Service
                     Id = t.id,
                     TaskName = t.TaskName,
                     TaskTime = t.TaskTime.ToString("dd.MM.yyyy HH:mm"),
-                    IsCompleted = t.IsCompleted
+                    IsCompleted = t.IsCompleted,
+                    IsActive = t.IsActive
                 }).ToList();
 
                 return result;
@@ -54,6 +55,47 @@ namespace MyWebApp.Server.Service
                     IsSuccess = false,
                     Result = null
                 };
+            }
+        }
+        public async Task<TaskResult<TaskDto>> GetActiveTasks()
+        {
+            try
+            {
+                var task = await _dbContext.tasks
+                    .Where(t => t.IsActive == true)
+                    .FirstOrDefaultAsync();
+
+                var taskDto = new TaskDto
+                {
+                    Id = task.id,
+                    TaskName = task.TaskName,
+                    TaskTime = task.TaskTime.ToString("dd.MM.yyyy HH:mm"),
+                    IsCompleted = task.IsCompleted,
+                    IsActive = task.IsActive
+                };
+
+                if (task != null)
+                {
+                    return new TaskResult<TaskDto>
+                    {
+                        IsSuccess = true,
+                        Result = taskDto
+                    };
+                }
+                else
+                {
+                    return new TaskResult<TaskDto>
+                    {
+                        IsSuccess = false,
+                        Result = null
+                    };
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Не удалось получить данные из таблицы Tasks в TaskService");
+                return new TaskResult<TaskDto>();
             }
         }
         public async Task<TaskResult<bool>> InsertRecord(Tasks task)
@@ -104,6 +146,7 @@ namespace MyWebApp.Server.Service
                     taskRecordUpdate.TaskCreated = taskUpdate.TaskCreated;
                     taskRecordUpdate.TaskTime = taskUpdate.TaskTime;
                     taskRecordUpdate.IsCompleted = taskUpdate.IsCompleted;
+                    taskRecordUpdate.IsActive = taskUpdate.IsActive;
                     _logger.Info("Запись обновлена");
                     await _dbContext.SaveChangesAsync();
                 }
